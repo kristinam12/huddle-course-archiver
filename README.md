@@ -25,6 +25,7 @@ Python 3.8+, [yt-dlp](https://github.com/yt-dlp/yt-dlp) and ffmpeg. The script i
 
 ## Known limitations
 
-- Audio lessons (e.g. SoundCloud embeds) are reported, not downloaded. Download them manually with yt-dlp.
+- Audio lessons (e.g. SoundCloud embeds) are reported in `problems.txt`, not downloaded. Download them manually with yt-dlp.
+- The script is written for Huddle-based platforms. It relies on Huddle's API structure (`/api/v4/e-learning/courses/...`, the `catalog` endpoint, and per-lesson `attachments` and `videos` endpoints). Other course platforms will need the API paths and response parsing adapted. Use the browser's DevTools Network tab to find the equivalent endpoints.
 
 Intended for personal archiving of courses you have legitimate access to.
