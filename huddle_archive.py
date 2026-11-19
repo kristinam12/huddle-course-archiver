@@ -21,6 +21,13 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+# --- Course settings ---------------------------------------------------------
+# These point at one specific course: "PCOS Balans Formule 2025" on the PCOS
+# platform. To archive a different course, change both values:
+#   SITE   = the platform's base URL (from your browser's address bar)
+#   COURSE = the course slug, i.e. the part after /resources/ in the course URL
+SITE = "https://pcosplatform.thehuddle.nl"
+COURSE = "pcos-balans-formule-2025"
 SITE = "https://pcosplatform.thehuddle.nl"
 COURSE = "pcos-balans-formule-2025"
 API = f"{SITE}/api/v4/e-learning/courses/{COURSE}"
